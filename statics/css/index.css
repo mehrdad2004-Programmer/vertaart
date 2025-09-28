@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'vazir';
+    src: url("../fonts/vazir.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "vazir" !important;
+}
+
+:root{
+    --bg1 : rgb(231, 231, 231);
+
+    --creamy-color : rgb(245, 236, 203);
+    --green-color : #96b95e;
+
+}
+
+body{
+    background-color: var(--creamy-color) !important;
+}
+
+.category_frame{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+.category_icons{
+    height: 100px;
+    width: 100px;
+}
+
+.hr{
+    border: 3px var(--green-color) solid;
+}
+
+
+.category_icons:hover{
+    height: 110px;
+    width: 110px;
+    transition: 500ms;
+}
+
+.text-right{
+    text-align: right;
+}
+
+
+.product-image{
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+}
+
+.see-btn{
+    height: fit-content;
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+    border-radius: 10px;
+}
+
+.btn-yellow{
+    background-color: var(--green-color);
+}
+
+
+
+.btn-yellow :hover{
+    background-color: yellow !important;
+}
+
+.card{
+    height:460px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.d-rtl{
+    direction: rtl;
+}
+
+.d-ltr{
+    direction: ltr;
+}
+
+.space{
+    height: 7px;
+    width: 7px;
+}
+
+.category_icons:not(:hover){
+    height: 100px;
+    width: 100px;
+    transition: 500ms;
+}
+
+
+.footer{
+    background-color: var(--green-color);
+    height: 300px;
+}
+
+.logo-footer{
+    height: 250px;
+    width: 250px;
+}
+
+.socials{
+    height: 50px;
+    width: 50px;
+}
+
+.social-containers{
+    height: fit-content;
+    width: fit-content;
+}

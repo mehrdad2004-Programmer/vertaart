@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدیریت محصولات</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../statics/css/admin/products.css">
+</head>
+<body>
+    <div class="header container p-1 text-right rounded-3 mt-3">
+        <span>افزودن محصول</span>
+    </div>
+
+    <div class="container d-rtl mt-4">
+        <form method="post">
+            <div class="container">
+                <div class="container">
+                    <span>عنوان محصول</span>
+                </div>
+                <div class="container mt-2">
+                    <input type="text" name="title" class="form-control">
+                </div>
+            </div>
+
+            <div class="container mt-4">
+                <div class="container">
+                    <span>دسته بندی محصول</span>
+                </div>
+                <div class="container mt-2">
+                    <select class="form-control">
+                        <option>گردنبند</option>
+                        <option>دستنبد</option>
+                        <option>انگشتر</option>
+                        <option>سنجاق سینه</option>
+                        <option>گردنبند</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container mt-4">
+                <div class="container">
+                    <span>قیمت محصول (ریال)</span>
+                </div>
+                <div class="container mt-2">
+                    <input type="text" name="title" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="container mt-4">
+                <div class="container">
+                    <span>توضیحات محصول</span>
+                </div>
+                <div class="container mt-2">
+                    <textarea name="description" style="height: 300px;" class="form-control">
+
+                    </textarea>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <input type="submit" value="ثبت محصول" class="btn btn-success form-control mt-5">
+            </div>
+
+
+        </form>
+    </div>
+
+
+</body>
+</html>

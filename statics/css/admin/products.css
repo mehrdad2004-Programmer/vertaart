@@ -1,0 +1,21 @@
+.header{
+    background-color: #eeeffb;
+    color: #2533cc;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.d-rtl{
+    direction: rtl;
+}
+
+.p-img{
+    height: 70px;
+    width: 70px;
+}
+
+table,td,th,tr,thead,tbody{
+    vertical-align: middle;
+}

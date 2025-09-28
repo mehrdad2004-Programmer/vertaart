@@ -1,0 +1,36 @@
+.login-card{
+    height: 500px;
+    width: 370px;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+html,body{
+    height: 100% !important;
+}
+
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.d-rtl{
+    direction: rtl;
+}
+
+.d-ltr{
+    direction:ltr;
+}
+
+.avatar{
+    height: 100px;
+    width: 100px;
+}
