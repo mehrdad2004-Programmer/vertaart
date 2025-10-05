@@ -1,50 +1,51 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../statics/css/login.css">
-</head>
-<body class="d-flex">
-    
-    <div class="container-fluid d-flex justify-content-center align-items-center">
-        <div class="login-card border border-2 shadow">
-            <div class="container text-center mt-3">
-                <img src="../statics/images/logos/background-black.png" class="avatar">
-            </div>
-
-            <div class="container text-center mt-3">
-                <span>ورود به ورتا آرت</span>
-            </div>
-
-            <div class="container mt-3">
-                <div class="container text-right">
-                    <span>نام کاربری</span>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../statics/css/login.css">
+    </head>
+    <body class="d-flex">
+        
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="login-card border border-2 shadow">
+                <div class="container text-center mt-3">
+                    <img src="../statics/images/logos/background-black.png" class="avatar">
                 </div>
-                <div class="container mt-2">
-                    <input type="text" class="form-control" name="username">
-                </div>
-            </div>
 
-            <div class="container mt-4">
-                <div class="container text-right">
-                    <span>رمزعبور</span>
+                <div class="container text-center mt-3">
+                    <span>ورود به ورتا آرت</span>
                 </div>
-                <div class="container mt-2">
-                    <input type="password" class="form-control" name="username">
-                </div>
-            </div>
 
-            <div class="container mt-5">
-                <div class="container text-center">
-                    <input type="submit" value="ورود" class="btn btn-primary form-control">
+                <div class="container mt-3">
+                    <div class="container text-right">
+                        <span>نام کاربری</span>
+                    </div>
+                    <div class="container mt-2">
+                        <input type="text" class="form-control" name="username">
+                    </div>
+                </div>
+
+                <div class="container mt-4">
+                    <div class="container text-right">
+                        <span>رمزعبور</span>
+                    </div>
+                    <div class="container mt-2">
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="container text-center">
+                        <input type="submit" value="ورود" name="submit" class="btn btn-primary form-control">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        <script src="../statics/js/auth/auth.js" type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>

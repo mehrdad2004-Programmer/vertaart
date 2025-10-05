@@ -50,8 +50,9 @@ body{
 
 .product-image{
     border-radius: 10px;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
+    padding: 10px !important;
 }
 
 .see-btn{
@@ -73,9 +74,10 @@ body{
 }
 
 .card{
-    height:460px;
+    min-height:320px !important;
     padding: 10px;
-    width: fit-content;
+    min-width: 250px !important;
+    white-space: nowrap;
 }
 
 .d-rtl{
@@ -87,8 +89,8 @@ body{
 }
 
 .space{
-    height: 7px;
-    width: 7px;
+    height: 10px !important;
+    width: 10px !important;
 }
 
 .category_icons:not(:hover){

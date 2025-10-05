@@ -12,7 +12,7 @@
     </div>
 
     <div class="container d-rtl mt-4">
-        <form method="post">
+        <form method="post" id="addProducts">
             <div class="container">
                 <div class="container">
                     <span>عنوان محصول</span>
@@ -27,7 +27,7 @@
                     <span>دسته بندی محصول</span>
                 </div>
                 <div class="container mt-2">
-                    <select class="form-control">
+                    <select class="form-control" name="categoury">
                         <option>گردنبند</option>
                         <option>دستنبد</option>
                         <option>انگشتر</option>
@@ -42,7 +42,7 @@
                     <span>قیمت محصول (ریال)</span>
                 </div>
                 <div class="container mt-2">
-                    <input type="text" name="title" class="form-control">
+                    <input type="text" name="price" class="form-control">
                 </div>
             </div>
 
@@ -60,13 +60,13 @@
 
 
             <div class="container">
-                <input type="submit" value="ثبت محصول" class="btn btn-success form-control mt-5">
+                <input type="submit" id="submit" value="ثبت محصول" class="btn btn-success form-control mt-5">
             </div>
 
 
         </form>
     </div>
 
-
+    <script src="../statics/js/admin/products/addProducts.js" type="module"></script>
 </body>
 </html>
