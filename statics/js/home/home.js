@@ -14,7 +14,7 @@ function getLatestProducts(){
             const productHTML = `    
                 <div class="card mt-3">
                     <div class="product-img d-flex justify-content-center mt-2">
-                        <img src="statics/images/products/p1.webp" alt="${item.title}" class="product-image rounded-3"/>
+                        <img src="http://mandegarhs.ir/verta/storage/app/public/products/${item.pic}" alt="${item.title}" class="product-image rounded-3"/>
                     </div>
                     <div class="container-fluid text-right mt-3">
                         <span class="fw-bold">${item.title}</span>

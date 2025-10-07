@@ -1,7 +1,7 @@
 import { fetchData } from "../api/api.js"
 
 function getComments() {
-    const comments = fetchData("comments/getComments", 'GET')
+    const comments = fetchData("comments/getComments?id=" + new URLSearchParams(window.location.search).get('id'), 'GET')
 
     comments.then(data => {
         console.log("id filtered data is : ", data)

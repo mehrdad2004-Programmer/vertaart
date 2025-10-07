@@ -1,13 +1,18 @@
 import { fetchData } from "../../api/api.js";
-function addProduct(jsonData){
-    const add = fetchData("products/create", "POST", jsonData);
+
+function addProduct(formData) {
+    const add = fetchData("products/create", "POST", formData);
 
     add.then(data => {
-        if(data.statscode == 201){
+        console.log(data.statuscode == 201)
+
+        if(data.statuscode === 201){
             alert("ثبت شد");
-            return;
+
+        }else{
+         alert("خطا در ثبت محصول");
+
         }
-        alert("خطا در ثبت محصول");
     }).catch(error => {
         console.error('Error:', error);
         alert("خطا در ارتباط با سرور");
@@ -21,11 +26,24 @@ submit.addEventListener("click", function(e){
 
     const formData = new FormData(document.querySelector("#addProducts"));
     
-    // Convert FormData to plain object
-    const jsonData = {};
-    formData.forEach((value, key) => {
-        jsonData[key] = value;
-    });
+    // Don't convert to JSON - send FormData directly
+    addProduct(formData);
+});
 
-    addProduct(jsonData);
+// Optional: Add image preview functionality
+const imageInput = document.querySelector('#image');
+const imagePreview = document.querySelector('#imagePreview');
+
+imageInput.addEventListener('change', function() {
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            imagePreview.src = e.target.result;
+            imagePreview.style.display = 'block';
+        }
+        reader.readAsDataURL(file);
+    } else {
+        imagePreview.style.display = 'none';
+    }
 });

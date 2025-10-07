@@ -5,6 +5,7 @@ function getProducts(){
     const products = fetchData("products/read", "GET");
 
     products.then(data => {
+        console.log(data)
         const tbody = document.querySelector("#rows")
         const pagination = document.querySelector("#pagination")
 
@@ -13,11 +14,11 @@ function getProducts(){
         // Clear existing rows
         tbody.innerHTML = '';
 
-        data.data.data.forEach(item => {
+        data.data.forEach(item => {
             tbody.innerHTML +=  `
                 <tr>
                     <td>
-                        <img src="../statics/images/products/p1.webp" class="p-img">
+                        <img src="http://mandegarhs.ir/verta/storage/app/public/products/${item.pic}" class="p-img">
                     </td>
                     <td>${item.id}</td>
                     <td>${item.title}</td>
