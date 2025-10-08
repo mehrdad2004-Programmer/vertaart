@@ -8,7 +8,7 @@ function addProduct(formData) {
 
         if(data.statuscode === 201){
             alert("ثبت شد");
-
+            window.location.replace("products.html")
         }else{
          alert("خطا در ثبت محصول");
 

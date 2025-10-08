@@ -7,13 +7,31 @@
     <link rel="stylesheet" href="../statics/css/admin/products.css">
 </head>
 <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="addproducts.html">افزودن محصول</a>
+                        </li>   
+                    </ul>   
+                </div>
+            </div>
+        </nav>
+    </div>
     <div class="header container p-1 text-right rounded-3 mt-3">
-        <span>افزودن محصول</span>
+        <span id="title-bar">افزودن محصول</span>
     </div>
 
     <div class="container d-rtl mt-4">
         <form method="post" id="addProducts" enctype="multipart/form-data">
-            <div class="container">
+            <div class="container" id="hidden-part">
                 <div class="container">
                     <span>تصویر محصول</span>
                 </div>
@@ -28,7 +46,7 @@
                     <span>عنوان محصول</span>
                 </div>
                 <div class="container mt-2">
-                    <input type="text" name="title" class="form-control">
+                    <input type="text" name="title" class="form-control" id="title">
                 </div>
             </div>
 
@@ -52,7 +70,7 @@
                     <span>قیمت محصول (ریال)</span>
                 </div>
                 <div class="container mt-2">
-                    <input type="text" name="price" class="form-control">
+                    <input type="text" name="price" class="form-control" id="price">
                 </div>
             </div>
 
@@ -62,9 +80,7 @@
                     <span>توضیحات محصول</span>
                 </div>
                 <div class="container mt-2">
-                    <textarea name="description" style="height: 300px;" class="form-control">
-
-                    </textarea>
+                    <textarea name="description" style="height: 300px;" class="form-control" id="description"></textarea>
                 </div>
             </div>
 
@@ -78,5 +94,6 @@
     </div>
 
     <script src="../statics/js/admin/products/addProducts.js" type="module"></script>
+    <script src="../statics/js/admin/products/editProducts.js" type="module"></script>
 </body>
 </html>
