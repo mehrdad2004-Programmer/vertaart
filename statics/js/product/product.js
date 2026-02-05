@@ -44,9 +44,7 @@ function createComment() {
     const comment = fetchData("comments/createComment", 'POST', {
         content: document.querySelector("#content").value,
         username: "09190505223",
-        product_id : new URLSearchParams(window.location.search).get('id'),
-        date: "1111",
-        time: "11111"
+        product_id : parseInt(new URLSearchParams(window.location.search).get('id')),
     });
 
     comment.then(data => {
